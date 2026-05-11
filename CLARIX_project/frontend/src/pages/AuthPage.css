@@ -1,0 +1,21 @@
+.auth-wrapper { display: flex; min-height: 100vh; }
+.auth-left {
+  flex: 1; background: linear-gradient(135deg, #1E1B4B 0%, #312E81 50%, #4338CA 100%);
+  display: flex; align-items: center; justify-content: center; padding: 48px;
+}
+.auth-hero { color: #fff; max-width: 400px; }
+.hero-icon { font-size: 52px; margin-bottom: 16px; }
+.auth-hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 14px; }
+.auth-hero p { font-size: 16px; opacity: .75; line-height: 1.6; margin-bottom: 32px; }
+.hero-features { display: flex; flex-direction: column; gap: 12px; }
+.hero-feature { display: flex; align-items: center; gap: 10px; font-size: 15px; }
+.hero-feature span { font-size: 18px; }
+.auth-right { width: 480px; display: flex; align-items: center; justify-content: center; padding: 40px 32px; background: #fff; }
+.auth-card { width: 100%; }
+.auth-card h2 { font-size: 26px; font-weight: 800; margin-bottom: 4px; }
+.auth-sub { font-size: 14px; color: var(--text-muted); margin-bottom: 24px; }
+.demo-btns { display: flex; gap: 8px; margin-bottom: 20px; }
+@media (max-width: 768px) {
+  .auth-left { display: none; }
+  .auth-right { width: 100%; }
+}

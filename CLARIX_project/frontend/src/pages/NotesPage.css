@@ -1,0 +1,16 @@
+.notes-controls { display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
+.notes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: 16px; }
+.note-card { padding: 20px; display: flex; flex-direction: column; gap: 12px; transition: transform .15s, box-shadow .15s; }
+.note-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.note-icon { font-size: 36px; }
+.note-body { flex: 1; }
+.note-title { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.note-desc { font-size: 13px; color: var(--text-muted); margin-bottom: 8px; line-height: 1.4; }
+.note-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.note-meta { display: flex; gap: 12px; font-size: 12px; color: var(--text-muted); }
+.note-actions { display: flex; gap: 8px; }
+.file-drop { border: 2px dashed var(--border); border-radius: 10px; padding: 28px; text-align: center; cursor: pointer; transition: border-color .15s; font-size: 14px; }
+.file-drop:hover { border-color: var(--primary); }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 200; display: flex; align-items: center; justify-content: center; padding: 16px; overflow-y: auto; }
+.modal { width: 100%; max-width: 480px; padding: 28px; }
+.modal h3 { font-size: 20px; font-weight: 800; }
