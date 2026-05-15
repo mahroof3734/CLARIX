@@ -1,4 +1,4 @@
-# 📖 Clarix — College Management Platform
+# 📖 Clarix — Class Room Management Platform
  
 > A full-stack web application that brings teachers and students together through real-time chat, smart attendance tracking, and resource sharing — all in one place.
  
@@ -12,11 +12,9 @@
  
 ## 🖥️ Live Preview
  
-| Login Page | Teacher Dashboard | Chat |
+| Login Page | Teacher Dashboard | Student Dashboard |
 |---|---|---|
-| ![login](https://via.placeholder.com/280x160/1E1B4B/ffffff?text=Login+Page) | ![dashboard](https://via.placeholder.com/280x160/4F46E5/ffffff?text=Dashboard) | ![chat](https://via.placeholder.com/280x160/0EA5E9/ffffff?text=Real-time+Chat) |
- 
-> 💡 Replace the placeholder images above with actual screenshots of your app.
+| ![login](https://github.com/mahroof3734/CLARIX/blob/main/sign_in.png) | ![dashboard](https://github.com/mahroof3734/CLARIX/blob/main/teacher_portal_dashboard.png) | ![dashboard](https://github.com/mahroof3734/CLARIX/blob/main/stdnt%20dashbrd.png) |
  
 ---
  
@@ -31,7 +29,6 @@
 - [Demo Accounts](#-demo-accounts)
 - [Screenshots](#-screenshots)
 - [Future Enhancements](#-future-enhancements)
-- [Author](#-author)
 ---
  
 ## 🧠 About the Project
@@ -212,47 +209,7 @@ npm start
  
 ---
  
-### Option 2 — Docker Compose (One Command)
- 
-```bash
-git clone https://github.com/yourusername/clarix.git
-cd clarix
-docker-compose up --build
-```
- 
-This spins up:
-- ✅ Django backend on port `8000`
-- ✅ React frontend on port `3000`
-- ✅ PostgreSQL database on port `5432`
-- ✅ Redis on port `6379`
----
- 
-### Environment Variables
- 
-Create a `.env` file inside the `backend/` folder:
- 
-```env
-SECRET_KEY=your-secret-key-here
-DEBUG=True
-ALLOWED_HOSTS=localhost,127.0.0.1
- 
-# Set to True to use PostgreSQL instead of SQLite
-USE_POSTGRES=False
-DB_NAME=clarix
-DB_USER=postgres
-DB_PASSWORD=yourpassword
-DB_HOST=localhost
-DB_PORT=5432
- 
-# Set to True to use Redis for WebSocket (production)
-USE_REDIS=False
-REDIS_HOST=127.0.0.1
-REDIS_PORT=6379
- 
-CORS_ORIGINS=http://localhost:3000
-```
- 
----
+
  
 ## 🌐 API Endpoints
  
@@ -326,21 +283,3 @@ After running `python manage.py seed_demo`, use these accounts:
 - [ ] 🌐 Multi-institution support with admin hierarchy
 ---
  
-## 🧑‍💻 Author
- 
-**Your Name**
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [github.com/yourusername](https://github.com/yourusername)
-- Email: your@email.com
----
- 
-## 📄 License
- 
-This project is open source and available under the [MIT License](LICENSE).
- 
----
- 
-<div align="center">
-  <p>⭐ If you found this project useful, please consider giving it a star!</p>
-  <p>Built with ❤️ using Django + React.js</p>
-</div>
